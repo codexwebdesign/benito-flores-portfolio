@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+============ typography ============
+*/
+
+.header-title {
+  font-size: 2rem;
+  color: #143774;
+}
+
+.header-summary {
+  font-size: .75rem;
+  color: #1792D2;
+}
+
+.header-links {
+  font-size: 1rem;
+  color: #707070;
+}
+
+/* 
+============ header ============
+*/
+
+.header {
+  background-color: #e7e7e7;
+}
+
+.header-title {
+  line-height: .75em;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5em .5em;
+}
+
+.header-link-container ul{
+  display: flex;
+}
+
+.header-link-container li {
+  list-style: none;
+  margin-left: 2em;
+}
+
+.header-links {
+  text-decoration: none;
+}
+
+.home {
+  border-bottom: .1em solid #b4b4b4;
+  cursor: default;
+}
+
+.about-me:hover,
+.about-me:focus,
+.projects:hover,
+.projects:focus {
+  color: #505050;
+}
+
+/* 
+============ main ============
+*/
+
+
+
+/* 
+============ footer ============
+*/
+
+.footer {
+  background-color: #e7e7e7;
+}
+
+.footer-container {
+  padding: 1.5em 0;
+}
+
+svg {
+  height: 3rem;
+  width: 3rem;
+}
+
+.footer-links {
+  text-align: center;
+}
+
+.footer-links:hover,
+.footer-links:focus {
+  opacity: 75%;
+}
+
+.footer-link-container li {
+  list-style: none;
+  margin: 0 3em;
+}
+
+.footer-link-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link-container {
+  text-align: center;
+}
+
+.footer-summary {
+  display: block;
+  padding-top: 1.5em;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-span {
+  color: #143774;
+}
+
+.footer-span:hover,
+.footer-span:focus {
+  color: #1792D2;
+}
+
+/* 
+============ media queries ============
+*/
+
+@media (max-width: 650px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 2.5em 0;
+  }
+
+  .header-link-container ul {
+    flex-direction: column;
+  }
+
+  .header-link-container li {
+    margin-top: 1.5em;
+    margin-left: 0;
+  }
+
+  .footer-container {
+    padding: 2.5em 0;
+  }
+
+  .footer-link-container li {
+    margin: 0 1em;
+  }
+
+  .footer-summary {
+    padding-top: 2.5em 0;
+  }
+
+}
