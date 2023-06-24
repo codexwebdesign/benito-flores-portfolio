@@ -1,167 +1,229 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 /* 
-============ typography ============
+============ global ============
 */
 
-.header-title {
+
+
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+header {
+  background-color: #f0f0f0;
+}
+
+footer {
+  background-color: #143774;
+}
+
+h1 {
   font-size: 2rem;
   color: #143774;
 }
 
-.header-summary {
+h2 {
+  font-size: 1.5rem;
+  color: #143774
+}
+
+p {
+  font-size: 1rem;
+  color: #707070;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.img-date {
   font-size: .75rem;
+}
+
+.strong-text {
+  font-weight: bold;
+}
+
+.in-text-link {
   color: #1792D2;
 }
 
-.header-links {
-  font-size: 1rem;
-  color: #707070;
+.in-text-link:hover,
+.in-text-link:focus {
+  text-decoration: underline;
+}
+
+.article-link {
+  display: inline-block;
+  margin: 1em 0;
+  color: #1792D2;
+}
+
+.article-link:hover,
+.article-link:focus {
+  color: #1792D2;
+  text-decoration: underline;
 }
 
 /* 
 ============ header ============
 */
 
-.header {
-  background-color: #e7e7e7;
+
+
+.header-container {
+  padding: 3em 0;
+  text-align: center;
+  max-width: 900px;
+  width: 98%;
+  margin: 0 auto;
 }
 
 .header-title {
-  line-height: .75em;
+  font-size: 2rem;
+  line-height: .8em;
 }
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1.5em .5em;
-}
-
-.header-link-container ul{
-  display: flex;
+.header-title-text {
+  color: #1792D2;
+  font-size: .75rem;
 }
 
 .header-link-container li {
-  list-style: none;
-  margin-left: 2em;
+  padding-top: 1.5em;
 }
 
 .header-links {
-  text-decoration: none;
-}
-
-.home {
-  border-bottom: .1em solid #b4b4b4;
-  cursor: default;
+  color: #707070;
+  font-size: 1rem;
 }
 
 .about-me:hover,
 .about-me:focus,
 .projects:hover,
 .projects:focus {
-  color: #505050;
+  color: #1792D2;
 }
 
+.home {
+  border-bottom: 2px solid #707070;
+  cursor: default;
+}
+
+
+
 /* 
-============ main ============
+============ primary ============
 */
 
 
+
+/* -- main -- */
+
+.primary-container {
+  max-width: 900px;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.main-article {
+  display: flex;
+  flex-direction: column;
+  padding: 3em 0 0 0;
+  border-bottom: 1px solid #707070;
+}
+
+.main-article-img {
+  width: 100%;
+  order: -2;
+}
+
+.img-date {
+  margin: .5em 0 0 0;
+}
+
+.img-date {
+  order: -1;
+}
+
+.article-title {
+  margin: 1em 0;
+}
+
+.services-title {
+  text-align: center;
+  margin: .5em 0;
+}
+
+/* -- aside -- */
+
+.widget-title {
+  text-align: center;
+  margin: .5em 0;
+}
+
+.widget-img {
+  width: 100%;
+}
+
+.widget-text {
+  color: #143774;
+  margin: 1em 0;
+}
 
 /* 
 ============ footer ============
 */
 
-.footer {
-  background-color: #e7e7e7;
-}
-
 .footer-container {
-  padding: 1.5em 0;
-}
-
-svg {
-  height: 3rem;
-  width: 3rem;
-}
-
-.footer-links {
   text-align: center;
+  padding: 4em 0;
 }
 
-.footer-links:hover,
-.footer-links:focus {
-  opacity: 75%;
-}
-
-.footer-link-container li {
-  list-style: none;
-  margin: 0 3em;
-}
-
-.footer-link-container ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-link-container {
-  text-align: center;
-}
-
-.footer-summary {
-  display: block;
-  padding-top: 1.5em;
-  text-decoration: none;
-  color: black;
+.footer-text {
+  color: #cacacac7;
 }
 
 .footer-span {
-  color: #143774;
+  font-weight: bold;
 }
 
-.footer-span:hover,
-.footer-span:focus {
-  color: #1792D2;
+.footer-link {
+  text-decoration: none;
+  color: #cacacac7;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: rgb(226, 226, 226);
 }
 
 /* 
 ============ media queries ============
 */
 
-@media (max-width: 650px) {
+@media (min-width: 680px) {
   .header-container {
-    flex-direction: column;
-    text-align: center;
-    padding: 2.5em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .header-link-container ul {
-    flex-direction: column;
+  .header-link-container {
+    display: flex;
   }
 
   .header-link-container li {
-    margin-top: 1.5em;
-    margin-left: 0;
-  }
-
-  .footer-container {
-    padding: 2.5em 0;
-  }
-
-  .footer-link-container li {
-    margin: 0 1em;
-  }
-
-  .footer-summary {
-    padding-top: 2.5em 0;
+    padding: 0 0 0 2.5em;
   }
 
 }
