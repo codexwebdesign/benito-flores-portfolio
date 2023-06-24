@@ -5,16 +5,17 @@
 * {
   margin: 0;
   padding: 0;
-  border-radius: 2px;
   /* border: 1px solid red; */
 }
 
 header {
   background-color: #f0f0f0;
+  border-radius: 0 0 2px 2px;
 }
 
 footer {
   background-color: #143774;
+  border-radius: 2px 2px 0 0;
 }
 
 h1 {
@@ -42,6 +43,14 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+img {
+  border-radius: 1px;
+}
+
+.side-bar-widget {
+  border-radius: 2px;
 }
 
 .img-date {
@@ -161,7 +170,6 @@ a {
 .widget-img {
   width: 100%;
   margin: .25em 0;
-  border-radius: 1px;
 }
 
 .widget-text {
