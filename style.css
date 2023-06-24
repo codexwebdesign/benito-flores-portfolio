@@ -47,6 +47,11 @@ img {
   border-radius: 1px;
 }
 
+svg {
+  width: 4em;
+
+}
+
 .side-bar-widget {
   border-radius: 2px;
 }
@@ -132,7 +137,7 @@ img {
 .primary-container {
   max-width: 900px;
   width: 98%;
-  margin: 3em auto 0 auto;
+  margin: 2em auto;
 }
 
 .main-article {
@@ -160,7 +165,19 @@ img {
 
 .services-title {
   text-align: center;
-  margin: .5em 0;
+  margin: 1em 0;
+  font-size: 1.5rem;
+}
+
+.recent-article {
+  display: flex;
+  flex-direction: column;
+}
+
+.svg-container {
+  order: -1;
+  padding: 1em;
+  align-self: center;
 }
 
 /* -- aside -- */
@@ -172,6 +189,12 @@ img {
 
 .widget-text {
   color: #143774;
+}
+
+.widget-title {
+  text-align: center;
+  margin: .5em 0;
+  font-size: 1.5rem;
 }
 
 /* 
@@ -215,6 +238,10 @@ img {
     align-items: center;
   }
 
+  .header-title-container {
+    text-align: left;
+  }
+
   .header-link-container {
     display: flex;
   }
@@ -231,7 +258,16 @@ img {
   }
 
   .main-container {
-    width: 70%;
+    width: 73%;
+  }
+
+  .recent-article {
+    flex-direction: row;
+  }
+
+  .svg-container {
+    align-self: flex-start;
+    padding: 1.5em 2em 0 0
   }
 
   .side-bar {
@@ -241,6 +277,12 @@ img {
   .side-bar-widget {
     border: 15px solid #e6e6e6;
     padding: .9em;
+  }
+
+  .widget-title {
+    text-align: left;
+    margin: 0;
+    font-size: 1rem;
   }
 
   .widget-text {
