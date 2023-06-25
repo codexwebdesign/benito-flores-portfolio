@@ -100,6 +100,7 @@ svg {
 .header-title {
   font-size: 2rem;
   line-height: .8em;
+  color: #F7FAFC;
 }
 
 .header-title-text {
@@ -291,3 +292,122 @@ svg {
 
 }
 
+/* 
+============ global ============
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1A202C; /* a darker hue for header, for prominence */
+}
+
+footer {
+  background-color: #1A202C; /* same color as header for consistency */
+}
+
+h1 {
+  font-size: 2rem;
+  color: #F7FAFC; /* white-adjacent color for contrast against dark background */
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #F7FAFC;
+}
+
+p {
+  font-size: 1rem;
+  color: #2D3748; /* dark gray for readability */
+}
+
+a {
+  text-decoration: none;
+  color: #2B6CB0; /* a vibrant color for links */
+}
+
+/* 
+============ header ============
+*/
+
+.header-container {
+  padding: 3em 0;
+  text-align: center;
+  max-width: 900px;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.header-title-text {
+  color: #CBD5E0;
+}
+
+.header-links {
+  color: #CBD5E0;
+}
+
+.about-me:hover,
+.about-me:focus,
+.projects:hover,
+.projects:focus {
+  color: white;
+}
+
+.home {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+/* 
+============ primary ============
+*/
+
+.primary-container {
+  max-width: 900px;
+  width: 98%;
+  margin: 2em auto;
+  background-color: #F7FAFC;
+}  
+
+.widget-text {
+  color: #143774
+}
+
+/* 
+============ footer ============
+*/
+
+.footer-container {
+  text-align: center;
+  padding: 4em 0;
+}
+
+.footer-text,
+.footer-link {
+  color: #CBD5E0;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: white;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #F7FAFC;
+}
+
+/* =================
+Typography
+================= */
+
+h1, 
+h2,
+h3,
+.services-title {
+  font-family: serif;
+  color: #143774;
+}
