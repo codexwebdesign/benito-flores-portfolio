@@ -63,10 +63,7 @@ svg {
 
 .side-bar-widget-container-one,
 .side-bar-widget-container-two {
-  border: 15px solid #CBD5E0;
   border-radius: 2px;
-  padding: 1.5em;
-  margin: 5em;
 }
 
 .img-date {
@@ -197,11 +194,6 @@ svg {
 
   /* -- aside -- */
 
-.side-bar-widget-container-one,
-.side-bar-widget-container-two {
-  background-color: white;
-}
-
 .widget-img {
   width: 100%;
   margin: .5em 0;
@@ -234,6 +226,7 @@ svg {
 
 .recent-projects-widget-title {
   order: 1;
+  margin-top: 1em;
 }
 
 /* 
@@ -320,7 +313,10 @@ svg {
   
   .side-bar-widget-container-one,
   .side-bar-widget-container-two {
+    border: 15px solid #CBD5E0;
     margin: 0;
+    border-radius: 2px;
+    padding: 1.5em;
   }
 
   .side-bar-widget-container-two {
