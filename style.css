@@ -1,5 +1,10 @@
+/* 
+============ global ============
+*/
+
 * {
   margin: 0;
+  padding: 0;
   /* border: 1px solid red; */
 }
 
@@ -16,8 +21,14 @@ h1 {
   color: #143774;
 }
 
+h2 {
+  font-size: 1.5rem;
+  color: #143774
+}
+
 p {
   font-size: 1rem;
+  color: #707070;
 }
 
 li {
@@ -30,6 +41,48 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+img {
+  border-radius: 1px;
+}
+
+svg {
+  width: 4em;
+
+}
+
+.side-bar-widget {
+  border-radius: 2px;
+}
+
+.img-date {
+  font-size: .75rem;
+}
+
+.strong-text {
+  font-weight: bold;
+}
+
+.in-text-link {
+  color: #1792D2;
+}
+
+.in-text-link:hover,
+.in-text-link:focus {
+  text-decoration: underline;
+}
+
+.article-link {
+  display: inline-block;
+  margin: 1em 0;
+  color: #1792D2;
+}
+
+.article-link:hover,
+.article-link:focus {
+  color: #1792D2;
+  text-decoration: underline;
 }
 
 /* 
@@ -47,6 +100,7 @@ a {
 .header-title {
   font-size: 2rem;
   line-height: .8em;
+  color: white;
 }
 
 .header-title-text {
@@ -76,6 +130,75 @@ a {
 }
 
 /* 
+============ primary ============
+*/
+
+/* -- main -- */
+
+.primary-container {
+  max-width: 900px;
+  width: 98%;
+  margin: 2em auto;
+}
+
+.main-article {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #707070;
+}
+
+.main-article-img {
+  width: 100%;
+  order: -2;
+}
+
+.img-date {
+  margin: .5em 0 0 0;
+}
+
+.img-date {
+  order: -1;
+}
+
+.article-title {
+  margin: 1em 0;
+}
+
+.services-title {
+  text-align: center;
+  margin: 1em 0;
+  font-size: 1.5rem;
+}
+
+.recent-article {
+  display: flex;
+  flex-direction: column;
+}
+
+.svg-container {
+  order: -1;
+  padding: 1em;
+  align-self: center;
+}
+
+/* -- aside -- */
+
+.widget-img {
+  width: 100%;
+  margin: .25em 0;
+}
+
+.widget-text {
+  color: #143774;
+}
+
+.widget-title {
+  text-align: center;
+  margin: .5em 0;
+  font-size: 1.5rem;
+}
+
+/* 
 ============ footer ============
 */
 
@@ -97,15 +220,27 @@ a {
   color: #cacacac7;
 }
 
+.footer-link:hover,
+.footer-link:focus {
+  color: white;
+}
+
 /* 
 ============ media queries ============
 */
 
 @media (min-width: 680px) {
+
+/* -- header */
+
   .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .header-title-container {
+    text-align: left;
   }
 
   .header-link-container {
@@ -116,4 +251,154 @@ a {
     padding: 0 0 0 2.5em;
   }
 
+/* -- primary -- */
+
+  .primary-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-container {
+    width: 73%;
+  }
+
+  .recent-article {
+    flex-direction: row;
+  }
+
+  .svg-container {
+    align-self: flex-start;
+    padding: 1.5em 2em 0 0
+  }
+
+  .side-bar {
+    width: 25%;
+  }
+  
+  .side-bar-widget {
+    border: 15px solid #e6e6e6;
+    padding: .9em;
+  }
+
+  .widget-title {
+    text-align: left;
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .widget-text {
+    font-size: .9rem;
+  }
+
+}
+
+/* 
+============ global ============
+*/
+
+header {
+  background-color: #1A202C; /* a darker hue for header, for prominence */
+}
+
+footer {
+  background-color: #1A202C; /* same color as header for consistency */
+}
+
+h1 {
+  color: #F7FAFC; /* white-adjacent color for contrast against dark background */
+}
+
+h2 {
+  color: #F7FAFC;
+}
+
+p {
+  color: #2D3748; /* dark gray for readability */
+}
+
+a {
+  color: #2B6CB0; /* a vibrant color for links */
+}
+
+/* 
+============ header ============
+*/
+
+.header-container {
+  padding: 3em 0;
+  text-align: center;
+  max-width: 900px;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.header-title-text {
+  color: #CBD5E0;
+}
+
+.header-links {
+  color: #CBD5E0;
+}
+
+.about-me:hover,
+.about-me:focus,
+.projects:hover,
+.projects:focus {
+  color: white;
+}
+
+.home {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+/* 
+============ primary ============
+*/
+
+.primary-container {
+  max-width: 900px;
+  width: 98%;
+  margin: 2em auto;
+  background-color: #F7FAFC;
+}  
+
+.widget-text {
+  color: #143774
+}
+
+/* 
+============ footer ============
+*/
+
+.footer-container {
+  text-align: center;
+  padding: 4em 0;
+}
+
+.footer-text,
+.footer-link {
+  color: #CBD5E0;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: white;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #F7FAFC;
+}
+
+/* =================
+Typography
+================= */
+
+h1, 
+h2,
+h3,
+.services-title {
+  font-family: serif;
+  color: #143774;
 }
